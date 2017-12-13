@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name = "viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>Agenda jQuery</title>
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- <div class="row">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-1">
+        <p>Lista de Contactos</p>
+      </div>
+      <div class="col-md-1">
+        <button type="button" id="myModal" data-toggle="modal" data-target="#myModal"></button>
+        <button></button>
+      </div>        
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="col-md-8 col-md-offset-1">
+      <h2>Lista de Contactos</h2>
+    </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addContact"><i class="fa fa-plus add" aria-hidden="true"></i></button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#searchContact"><i class="fa fa-search search" aria-hidden="true"></i></button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="addContact" role="dialog">
+        <div class="modal-dialog">        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Contactos</h4>
+            </div>
+            <div class="modal-body">                
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label"><i class="fa fa-user-circle" aria-hidden="true"></i></label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="Nombre"required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="col-sm-2 control-label"><i class="fa fa-phone" aria-hidden="true"></i></label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPhone" placeholder="Teléfono" required>
+                  </div>
+                </div>
+              </form>                
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="buttonAdd" class="btn btn-default" data-dismiss="modal">Agregar</button>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <section id="sectionAgenda"> <!--class="row">
+        <!-- <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 id="contactName"></h3>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-8">
+                <h5 id="contactNumber"></h5>
+              </div>
+              <div class="col-md-4">
+                
+              </div>
+            </div>
+          
+        </div> -->
+      </section>
+      
+    </div>
+	
+		
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
